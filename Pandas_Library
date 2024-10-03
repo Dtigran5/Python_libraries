@@ -14,20 +14,20 @@ Key Features:
 
 Table of Most Useful and Important Pandas Functions
 
-pd.DataFrame()	Create a DataFrame from a dictionary, list, or other data structure. df = pd.DataFrame(data)
-pd.read_csv()	Read data from a CSV file into a DataFrame.	df = pd.read_csv('data.csv')
-df.head()	Display the first few rows of the DataFrame. df.head(5)
-df.info()	Provides information about the DataFrame (columns, types, missing values). df.info()
-df.describe()	Provides summary statistics of numeric columns.	df.describe()
-df.columns	Return the column names of the DataFrame. df.columns
-df.shape	Return the shape (number of rows, columns) of the DataFrame. df.shape
+pd.DataFrame() Create a DataFrame from a dictionary, list, or other data structure. df = pd.DataFrame(data)
+pd.read_csv() Read data from a CSV file into a DataFrame. df = pd.read_csv('data.csv')
+df.head() Display the first few rows of the DataFrame. df.head(5)
+df.info() Provides information about the DataFrame (columns, types, missing values). df.info()
+df.describe() Provides summary statistics of numeric columns. df.describe()
+df.columns Return the column names of the DataFrame. df.columns
+df.shape Return the shape (number of rows, columns) of the DataFrame. df.shape
 df.isnull()	Identify missing values in the DataFrame. df.isnull()
 df.fillna()	Fill missing values with a specified value. df.fillna(0)
 df.dropna()	Remove rows with missing values. df.dropna()
-df.loc[]	Access a group of rows and columns by labels or boolean conditions.	df.loc[0, 'Name']
-df.iloc[]	Access a group of rows and columns by integer position.	df.iloc[0, 0]
+df.loc[] Access a group of rows and columns by labels or boolean conditions. df.loc[0, 'Name']
+df.iloc[] Access a group of rows and columns by integer position. df.iloc[0, 0]
 df.groupby() Group the DataFrame by a particular column and apply aggregation. df.groupby('Age').mean()
-pd.merge()	Merge two DataFrames on a common column. pd.merge(df1, df2, on='Name')
+pd.merge() Merge two DataFrames on a common column. pd.merge(df1, df2, on='Name')
 df.sort_values() Sort the DataFrame by a specific column. df.sort_values('Age')
 df.drop() Drop specified labels from rows or columns. df.drop('column_name', axis=1)
 df.set_index() Set a column as the index of the DataFrame. df.set_index('Name')
