@@ -1,3 +1,5 @@
+NumPy Library
+
 NumPy (Numerical Python) is a core Python library for numerical computing. It provides support for large multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently. It is the foundation for many other data science and machine learning libraries like Pandas, SciPy, TensorFlow, and more.
 
 NumPy is highly optimized for performance, particularly when working with numerical data. Its array object, called ndarray, allows for efficient storage and manipulation of large datasets.
