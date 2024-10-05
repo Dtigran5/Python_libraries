@@ -1,0 +1,48 @@
+PyTorch Library
+
+PyTorch is an open-source machine learning library developed by Facebook’s AI Research lab (FAIR). It is widely used for applications such as deep learning, natural language processing, and computer vision. PyTorch is particularly popular in research due to its dynamic computation graph, which makes it more intuitive and flexible than some other frameworks like TensorFlow.
+
+PyTorch's primary features include:
+
+    Dynamic Computational Graphs (Define-by-Run): PyTorch allows computations to be defined on-the-fly, making it easier to debug and work with variable input sizes.
+    Tensor Computations: Similar to NumPy, but with GPU acceleration.
+    Autograd: Automatic differentiation to facilitate backpropagation in neural networks.
+    TorchScript: A way to convert PyTorch models to be optimized for production.
+    Support for Distributed Training: Efficient parallelism across multiple GPUs.
+
+Key Features:
+
+    Deep Learning Support: Build and train complex neural networks with ease.
+    Dynamic Graphing: Dynamically create computation graphs that allow for more intuitive and flexible debugging.
+    Automatic Differentiation: PyTorch’s autograd module handles backpropagation automatically.
+    GPU Acceleration: Tensors can be moved seamlessly between CPU and GPU for faster computation.
+    TorchScript: Convert models to production-ready, optimized forms.
+    Integration with Python: Seamless integration with other Python libraries such as NumPy and SciPy.
+
+Table of Most Useful and Important PyTorch Functions
+
+torch.tensor() Create a tensor. x = torch.tensor([1.0, 2.0])
+torch.zeros() Create a tensor filled with zeros. x = torch.zeros(3, 3)
+torch.ones() Create a tensor filled with ones. x = torch.ones(3, 3)
+torch.rand() Create a tensor with random values from a uniform distribution. x = torch.rand(3, 3)
+torch.randn() Create a tensor with random values from a normal distribution. x = torch.randn(3, 3)
+torch.max() Get the maximum value of a tensor. torch.max(x)
+torch.min() Get the minimum value of a tensor. torch.min(x)
+torch.mean() Compute the mean of a tensor. torch.mean(x)
+torch.matmul() Perform matrix multiplication. torch.matmul(a, b)
+torch.autograd.grad() Compute the gradient of tensors. torch.autograd.grad(y, x)
+torch.cuda.is_available() Check if a GPU is available. torch.cuda.is_available()
+torch.save() Save a PyTorch model or tensor. torch.save(model.state_dict(), 'model.pth')
+torch.load() Load a saved PyTorch model or tensor. torch.load('model.pth')
+nn.Module Base class for all neural network modules. class SimpleNN(nn.Module): ...
+nn.Linear() Applies a linear transformation to the input data. nn.Linear(in_features, out_features)
+nn.ReLU() Applies the ReLU (Rectified Linear Unit) activation function. nn.ReLU()
+nn.MSELoss() Mean squared error loss function. criterion = nn.MSELoss()
+nn.CrossEntropyLoss() Cross entropy loss for classification tasks. criterion = nn.CrossEntropyLoss()
+optim.SGD() Stochastic gradient descent optimizer. optimizer = optim.SGD(model.parameters(), lr=0.01)
+optim.Adam() Adam optimizer (adaptive learning rate). optimizer = optim.Adam(model.parameters(), lr=0.001)
+DataLoader() Loads data from a dataset and provides batches for training or evaluation. train_loader = DataLoader(dataset, batch_size=32)
+torch.nn.Sequential() A container to simplify model definitions by stacking layers sequentially. model = nn.Sequential(nn.Linear(10, 5), nn.ReLU(), ...)
+torch.nn.functional.softmax() Apply the softmax function to the input tensor (often used for classification). output = F.softmax(input)
+torch.cuda() Moves a tensor to the GPU. x = x.cuda()
+torch.no_grad() Disables gradient computation (used during inference to save memory). with torch.no_grad(): ...
