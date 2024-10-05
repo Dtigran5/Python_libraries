@@ -1,0 +1,47 @@
+Keras Library
+
+Keras is an open-source, high-level neural network API written in Python. It runs on top of other machine learning frameworks such as TensorFlow, Microsoft Cognitive Toolkit (CNTK), or Theano and provides a simple and consistent interface to build deep learning models. Keras is designed to enable fast experimentation and is highly user-friendly, making it a popular choice for both beginners and researchers.
+
+The key features of Keras include:
+
+    User-friendly API: Simple and intuitive API for building neural networks quickly.
+    Modularity: Keras models are built by stacking layers, making it easy to experiment with different architectures.
+    Backend Flexibility: Keras can run on top of TensorFlow, CNTK, or Theano.
+    Preprocessing: Provides utilities for data preprocessing, augmentation, and handling of image, text, and sequence data.
+    Supports Multiple Types of Models: Easily build sequential models (a stack of layers) or functional models (more flexible graphs).
+    Compatibility with TensorFlow: Fully integrated into TensorFlow, especially after TensorFlow 2.0, where Keras is now TensorFlow’s high-level API.
+    Easy Model Training: Simple APIs for training, evaluation, and making predictions.
+
+Key Features:
+
+    High-Level Building Blocks: Simple functions for creating neural networks (with a focus on user experience).
+    Pre-trained Models: Access to pre-trained models like VGG16, ResNet, and more, via keras.applications.
+    Fast Prototyping: Less code and fewer concepts to quickly create models.
+    Extensible: Custom layers, models, and optimizers can be added for research.
+
+Table of Most Useful and Important Keras Functions
+
+Sequential() Builds a linear stack of layers for a neural network. model = Sequential([...])
+Dense() Fully connected layer in a neural network. Dense(64, activation='relu')
+Conv2D() Adds a 2D convolution layer (used in CNNs). Conv2D(32, (3, 3), activation='relu')
+MaxPooling2D() Adds a max-pooling layer to downsample feature maps in CNNs. MaxPooling2D((2, 2))
+Flatten() Flattens input to be fed into dense layers (usually used in CNNs). Flatten()
+Input() Defines an input layer (used in functional models). input_tensor = Input(shape=(32,))
+compile() Configures the model for training (defines loss function, optimizer, and metrics). model.compile(optimizer='adam', loss='categorical_crossentropy')
+fit() Trains the model on the training data. model.fit(data, labels, epochs=10)
+evaluate() Evaluates the model’s performance on test/validation data. model.evaluate(test_data, test_labels)
+predict() Generates predictions on new data based on the trained model. model.predict(new_data)
+save() Saves the entire model to disk. model.save('my_model.h5')
+load_model() Loads a saved model from disk. new_model = load_model('my_model.h5')
+callbacks.EarlyStopping() Stops training early when performance metric stops improving. callbacks=[EarlyStopping(monitor='val_loss')]
+ImageDataGenerator() Used for data augmentation and real-time data loading for images. ImageDataGenerator(rotation_range=20)
+Keras.layers.Embedding() Embedding layer used in NLP models. layers.Embedding(input_dim=10000, output_dim=128)
+Keras.layers.LSTM() Long Short-Term Memory layer (used for sequence data). layers.LSTM(64)
+Keras.layers.Bidirectional() Bidirectional wrapper for RNNs (applies the RNN forward and backward). Bidirectional(LSTM(64))
+Keras.layers.Dropout() Adds dropout for regularization (randomly drops units during training). Dropout(0.5)
+Keras.preprocessing.text.Tokenizer() Tokenizes text into integer sequences for NLP tasks. Tokenizer(num_words=10000)
+Keras.applications Provides access to pre-trained models such as VGG16, ResNet, MobileNet, etc. model = Keras.applications.VGG16()
+Keras.backend.clear_session() Clears the TensorFlow session to free up memory between model runs. Keras.backend.clear_session()
+Keras.layers.BatchNormalization() Normalizes the activations in the network to improve training stability. BatchNormalization()
+Keras.callbacks.ModelCheckpoint() Saves model checkpoints during training. ModelCheckpoint(filepath='model.h5')
+
