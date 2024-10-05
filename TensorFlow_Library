@@ -1,0 +1,41 @@
+TensorFlow Library
+
+TensorFlow is an open-source machine learning framework developed by Google that is widely used for both research and production. It provides a comprehensive ecosystem of tools, libraries, and community resources that enable developers and researchers to build and deploy machine learning models at scale. TensorFlow supports both high-level APIs (like Keras) for building and training models quickly, and low-level operations for more complex computations.
+
+It is designed to work efficiently on CPUs, GPUs, and even TPUs (Tensor Processing Units), and has strong support for building and training deep learning models, including both convolutional neural networks (CNNs) and recurrent neural networks (RNNs). TensorFlow can also be used for natural language processing (NLP), reinforcement learning, and time-series analysis.
+Key Features:
+
+    Tensor Operations: TensorFlow provides support for tensor operations, including matrix multiplication and element-wise operations.
+    Keras Integration: High-level APIs through Keras make it easy to build and train models.
+    Eager Execution: Supports dynamic execution of operations (immediate evaluation).
+    Data Pipeline Support: TensorFlow provides utilities for managing large-scale datasets, preprocessing, and feeding data to the model efficiently.
+    Distributed Computing: Supports distributed training across multiple devices, including multiple GPUs and TPUs.
+    Production Ready: TensorFlow Extended (TFX) provides components for production deployment.
+    TensorBoard: Visualization tool for tracking metrics and debugging during model training.
+    TensorFlow Lite: Optimized for deploying models on mobile and IoT devices.
+
+Table of Most Useful and Important TensorFlow Functions
+
+tf.constant() Creates a constant tensor. tf.constant([1.0, 2.0, 3.0])
+tf.Variable() Creates a variable tensor (modifiable). x = tf.Variable([1.0, 2.0])
+tf.add() Performs element-wise addition. tf.add(a, b)
+tf.matmul() Performs matrix multiplication. tf.matmul(a, b)
+tf.reduce_mean() Computes the mean of elements across dimensions of a tensor. tf.reduce_mean(x)
+tf.keras.Sequential() Builds a model layer by layer. model = tf.keras.Sequential([...])
+tf.keras.layers.Dense() Adds a densely connected layer to the neural network. layers.Dense(64, activation='relu')
+tf.keras.layers.Conv2D() Adds a convolutional layer to the model (used in CNNs). layers.Conv2D(32, (3, 3), activation='relu')
+tf.keras.layers.MaxPooling2D() Adds a max-pooling layer (used in CNNs). layers.MaxPooling2D((2, 2))
+tf.keras.layers.Flatten() Flattens the input (usually used before fully connected layers). layers.Flatten()
+tf.keras.losses.MeanSquaredError() Loss function for regression tasks. loss = tf.keras.losses.MeanSquaredError()
+tf.keras.losses.SparseCategoricalCrossentropy() Loss function for classification tasks. loss = tf.keras.losses.SparseCategoricalCrossentropy()
+tf.keras.optimizers.Adam() Adam optimizer for training neural networks. optimizer = tf.keras.optimizers.Adam(lr=0.001)
+tf.GradientTape() Context for automatic differentiation (tracks operations on tensors for computing gradients). with tf.GradientTape() as tape: ...
+tf.data.Dataset.from_tensor_slices() Creates a dataset from tensors (useful for feeding data to the model). dataset = tf.data.Dataset.from_tensor_slices((data, labels))
+tf.random.normal() Creates a tensor with random values from a normal distribution. tf.random.normal([3, 3])
+tf.keras.callbacks.TensorBoard() Callback to use TensorBoard for visualization during training. tensorboard_callback = tf.keras.callbacks.TensorBoard()
+tf.keras.models.load_model() Loads a saved Keras model. new_model = tf.keras.models.load_model('my_model')
+tf.saved_model.save() Saves a TensorFlow model (in production-ready format). tf.saved_model.save(model, 'path_to_model')
+tf.device() Specifies a device (CPU/GPU) to run operations. with tf.device('/GPU:0'): ...
+tf.reduce_sum() Computes the sum of tensor elements across dimensions. tf.reduce_sum(x)
+tf.cast() Casts a tensor to a new data type. tf.cast(x, tf.float32)
+tf.argmax() Returns the index with the largest value across axes of a tensor (useful for classification). tf.argmax(predictions, axis=1)
