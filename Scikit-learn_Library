@@ -1,0 +1,39 @@
+Scikit-learn Library
+
+Scikit-learn is one of the most popular open-source machine learning libraries for Python. It provides simple and efficient tools for data mining and data analysis, built on top of NumPy, SciPy, and Matplotlib. Scikit-learn offers a wide range of supervised and unsupervised learning algorithms, as well as tools for model selection, validation, and preprocessing. It is highly regarded for its ease of use and consistency, making it ideal for both beginners and experienced practitioners.
+Key Features of Scikit-learn:
+
+    Comprehensive Machine Learning Algorithms: Includes classification, regression, clustering, and dimensionality reduction algorithms.
+    Preprocessing Tools: Offers tools to scale, normalize, encode, and transform data before feeding it into machine learning models.
+    Model Selection: Provides utilities for model selection, cross-validation, and hyperparameter tuning (e.g., grid search).
+    Metrics: Offers metrics for evaluating models (e.g., accuracy, precision, recall, AUC-ROC, etc.).
+    Pipelines: Combines data preprocessing and model building into a single pipeline for a more efficient workflow.
+    Integration: Works seamlessly with NumPy, SciPy, and Matplotlib for data manipulation and visualization.
+
+Table of Most Useful and Important Scikit-learn Functions
+
+train_test_split() Splits the dataset into training and testing subsets. train_test_split(X, y, test_size=0.2)
+RandomForestClassifier() A powerful ensemble classifier that builds multiple decision trees and merges them to improve accuracy. RandomForestClassifier(n_estimators=100)
+StandardScaler() Standardizes features by removing the mean and scaling to unit variance. scaler = StandardScaler()
+SVC() Support Vector Machine (SVM) classifier for binary and multiclass classification tasks. SVC(kernel='linear', C=1)
+GridSearchCV() Performs an exhaustive search for hyperparameters based on cross-validation. GridSearchCV(SVC(), param_grid, cv=5)
+PCA() Principal Component Analysis (PCA) for dimensionality reduction. PCA(n_components=2)
+accuracy_score() Computes the accuracy of a classification model. accuracy_score(y_true, y_pred)
+make_pipeline() Creates a pipeline of multiple steps, such as preprocessing and model fitting. make_pipeline(StandardScaler(), SVC())
+LogisticRegression() Logistic Regression model for binary and multiclass classification tasks. LogisticRegression()
+KNeighborsClassifier() k-Nearest Neighbors (k-NN) algorithm for classification and regression tasks. KNeighborsClassifier(n_neighbors=5)
+DecisionTreeClassifier() A decision tree classifier that can be used for both classification and regression tasks. DecisionTreeClassifier()
+cross_val_score() Evaluates a model by splitting the data into k-folds and performing cross-validation. cross_val_score(model, X, y, cv=5)
+confusion_matrix() Computes a confusion matrix to evaluate the accuracy of a classification. confusion_matrix(y_true, y_pred)
+classification_report() Builds a text report showing the main classification metrics such as precision, recall, and F1-score. classification_report(y_true, y_pred)
+KMeans() Clustering algorithm that partitions data into k clusters based on feature similarity. KMeans(n_clusters=3)
+MinMaxScaler() Scales and translates data to a given range, typically [0, 1]. MinMaxScaler()
+LabelEncoder() Encodes categorical labels as integers for machine learning algorithms. LabelEncoder()
+LinearRegression() Linear regression model for predicting continuous values. LinearRegression()
+Ridge() Ridge regression model (L2 regularization). Ridge(alpha=1.0)
+Lasso() Lasso regression model (L1 regularization). Lasso(alpha=0.1)
+DBSCAN() Density-Based Spatial Clustering for Applications with Noise (DBSCAN) algorithm. DBSCAN(eps=0.5, min_samples=5)
+TSNE() t-distributed Stochastic Neighbor Embedding (t-SNE) for visualization and dimensionality reduction. TSNE(n_components=2)
+OneHotEncoder() Converts categorical variables into a format that can be provided to ML algorithms to improve performance. OneHotEncoder()
+RFE() Recursive Feature Elimination (RFE) for selecting important features. RFE(estimator, n_features_to_select=10)
+BaggingClassifier() An ensemble meta-estimator that fits base classifiers on random subsets of the dataset and aggregates them. BaggingClassifier(base_estimator=SVC(), n_estimators=10)
