@@ -1,0 +1,43 @@
+SciPy Library
+
+SciPy (Scientific Python) is an open-source library used for scientific and technical computing. It builds on the capabilities of NumPy and provides a large number of high-level mathematical, scientific, and engineering functions. SciPy contains modules for optimization, linear algebra, integration, interpolation, signal processing, statistics, and more.
+
+It is widely used in data science, machine learning, and scientific computing, particularly when more advanced mathematical operations are needed beyond what NumPy offers.
+Key Features:
+
+    Optimization: Solve linear programming problems, nonlinear optimization, and least-squares minimization.
+    Linear Algebra: Advanced functions for matrix operations, eigenvalues, matrix factorizations, and more.
+    Statistics: A wide variety of statistical distributions and statistical functions.
+    Integration: Perform numerical integration of functions.
+    Interpolation: Perform spline and polynomial interpolation.
+    Signal and Image Processing: Tools for filtering, convolution, Fourier transforms, and image manipulation.
+    Solvers for Ordinary Differential Equations (ODEs).
+
+Table of Most Useful and Important SciPy Functions
+
+optimize.minimize() Minimizes a scalar function of one or more variables. optimize.minimize(func, x0)
+optimize.curve_fit() Fits a function to data using non-linear least squares. optimize.curve_fit(f, xdata, ydata)
+integrate.quad() Compute a definite integral of a function. integrate.quad(f, 0, np.pi)
+integrate.dblquad() Compute a double integral. integrate.dblquad(f, 0, 2, lambda x: 0, lambda x: 1)
+linalg.solve() Solves a linear matrix equation (Ax = b). linalg.solve(A, b)
+linalg.inv() Compute the inverse of a matrix. linalg.inv(A)
+linalg.det() Compute the determinant of a matrix. linalg.det(A)
+linalg.eig() Compute the eigenvalues and eigenvectors of a square matrix. linalg.eig(A)
+stats.norm() Provides a normal (Gaussian) distribution object for further analysis. stats.norm(loc=0, scale=1)
+stats.ttest_ind() Perform an independent t-test on two samples to compare means. stats.ttest_ind(a, b)
+stats.chisquare() Perform a chi-square test to check for independence between categorical variables. stats.chisquare(f_obs)
+stats.mode() Returns the mode (most frequent value) of an array. stats.mode(data)
+stats.describe() Compute summary statistics (mean, variance, skewness, etc.) for a dataset. stats.describe(data)
+interpolate.interp1d() Interpolates a 1D function based on given data points. interpolate.interp1d(x, y)
+interpolate.spline() Performs spline interpolation on data. interpolate.spline(x, y, new_x)
+signal.convolve() Perform a convolution between two arrays. signal.convolve(a, v)
+signal.savgol_filter() Apply a Savitzky-Golay filter to smooth data. signal.savgol_filter(x, 5, 2)
+signal.fft() Compute the one-dimensional discrete Fourier Transform. signal.fft(x)
+signal.medfilt() Apply a median filter to the data. signal.medfilt(x, 3)
+signal.find_peaks() Find peaks in a signal array. signal.find_peaks(data)
+spatial.distance.euclidean() Compute the Euclidean distance between two points. spatial.distance.euclidean(p1, p2)
+spatial.KDTree() Efficiently find nearest neighbors using a k-dimensional tree. tree = spatial.KDTree(points)
+spatial.cdist() Compute distance between each pair of the two collections of inputs. spatial.cdist(arr1, arr2, 'euclidean')
+optimize.linprog() Solve a linear programming problem. optimize.linprog(c, A, b)
+integrate.odeint() Solve ordinary differential equations (ODEs). integrate.odeint(func, y0, t)
+fftpack.fft() Compute the discrete Fourier Transform using FFT. fftpack.fft(x)
